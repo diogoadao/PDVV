@@ -1,0 +1,348 @@
+#prepage-loader,
+body {
+    background: #eee
+}
+
+footer.form-footer,
+main {
+    background: #f5f5f5
+}
+
+.sk-cube-grid .sk-cube {
+    background-color: #3949ab
+}
+
+.spinner-layer.spinner-indigo-only {
+    border-color: #3949ab
+}
+
+a .material-icons {
+    color: #000
+}
+
+::-moz-selection,
+code[class*=language-] ::selection,
+code[class*=language-]::selection,
+pre[class*=language-] ::selection,
+pre[class*=language-]::selection {
+    color: #fff;
+    background: #5165d6
+}
+
+::selection,
+code[class*=language-] ::selection,
+code[class*=language-]::selection,
+pre[class*=language-] ::selection,
+pre[class*=language-]::selection {
+    color: #fff;
+    background: #5165d6
+}
+
+a {
+    color: #3949ab
+}
+
+nav.page-header {
+    background: #3949ab
+}
+
+#search-body .search-box .material-icons,
+#search-body .search-box input,
+#user-account-dropdown li a,
+.search-result-body li a,
+nav.page-header,
+nav.page-header .material-icons,
+nav.page-header li a {
+    color: #000
+}
+
+nav.page-header a.hrz-menu .material-icons,
+nav.page-header li a.hrz-menu,
+nav.page-header li a.hrz-menu .material-icons {
+    color: #fff
+}
+
+#brand-banner .brand,
+nav.page-header .brand-logo {
+    color: #fff !important;
+    font-family: Truetype-3
+}
+
+.search-result {
+    background: #fff
+}
+
+.search-result-title {
+    color: #757575
+}
+
+.search-result-body li a:hover {
+    background: #f5f5f5
+}
+
+.theme-bg {
+    background: #3949ab !important
+}
+
+.theme-text {
+    color: #3949ab !important
+}
+
+.breadcrumbs>li>a {
+    color: #000
+}
+
+.left-sidebar {
+    background-color: #fafafa
+}
+
+.left-sidebar .active,
+.left-sidebar .menu-active {
+    background: #eae7e7 !important
+}
+
+.left-sidebar-body ul li a,
+.toggle-icon-left-sidebar .material-icons {
+    color: rgba(49, 48, 48, .87)
+}
+
+.left-sidebar-body ul li a:hover {
+    background-color: rgba(0, 0, 0, .05)
+}
+
+.left-sidebar .sidebar-footer,
+.toggle-fixed {
+    background: #fff
+}
+
+.right-sidebar {
+    background-color: #fff
+}
+
+.tabs.tabs-right-sidebar .tab a {
+    color: #000
+}
+
+.tabs.tabs-right-sidebar {
+    box-shadow: inset 0 -1px #3949ab
+}
+
+.tabs.tabs-right-sidebar .tab .active {
+    box-shadow: inset 0 -3px #3949ab
+}
+
+#index-footer-box .footer-copyright {
+    background: #303f9f;
+    color: #fff
+}
+
+.chips .chip.selected,
+.collection .collection-item.active,
+.pagination li.active,
+.preloader1-spinner,
+.preloader2-double-bounce1,
+.preloader2-double-bounce2,
+.preloader3-spinner>div,
+.preloader4-spinner>div,
+.preloader5-cube-grid .preloader5-cube,
+.preloader6-folding-cube .preloader6-cube:before,
+.progress .determinate,
+.progress .indeterminate,
+.tabs .indicator {
+    background-color: #3949ab
+}
+
+.admin-error-box .error-code,
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating),
+.dropdown-content li>a,
+.dropdown-content li>span,
+.error-box .error-code,
+.secondary-content .material-icons,
+.tabs .tab a.active,
+.tabs .tab a:hover,
+div.material-table table th.sorting:after,
+div.material-table table th.sorting_asc:after,
+div.material-table table th.sorting_desc:after {
+    color: #3949ab
+}
+
+.tabs .tab .active {
+    box-shadow: inset 0 -2px #3949ab
+}
+
+.chips.focus {
+    border-bottom: 1px solid #3949ab;
+    box-shadow: 0 1px 0 0 #3949ab
+}
+
+.progress {
+    background: #85a2e6
+}
+
+blockquote {
+    border-left: 5px solid #3949ab
+}
+
+.col.grid-example,
+.shadow-demo {
+    background-color: #3949ab
+}
+
+.input-field .prefix.active,
+.input-field input:not([type])+focus+label,
+.input-field input[type=date]:focus+label,
+.input-field input[type=datetime-local]:focus+label,
+.input-field input[type=datetime]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=number]:focus+label,
+.input-field input[type=password]:focus+label,
+.input-field input[type=search]:focus+label,
+.input-field input[type=tel]:focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=time]:focus+label,
+.input-field input[type=url]:focus+label,
+.input-field textarea.materialize-textarea:focus+label,
+input:not([type]):focus:not([readonly])+label,
+input[type=date]:focus:not([readonly])+label,
+input[type=datetime-local]:focus:not([readonly])+label,
+input[type=datetime]:focus:not([readonly])+label,
+input[type=email]:focus:not([readonly])+label,
+input[type=number]:focus:not([readonly])+label,
+input[type=password]:focus:not([readonly])+label,
+input[type=search]:focus:not([readonly])+label,
+input[type=tel]:focus:not([readonly])+label,
+input[type=text]:focus:not([readonly])+label,
+input[type=time]:focus:not([readonly])+label,
+input[type=url]:focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #3949ab !important
+}
+
+[type=radio].with-gap:checked+label:after,
+[type=radio]:checked+label:after,
+[type=checkbox].filled-in:checked+label:after {
+    border: 2px solid #3949ab !important;
+    background-color: #3949ab !important
+}
+
+[type=radio].with-gap:checked+label:before {
+    border: 2px solid #3949ab
+}
+
+[type=checkbox]:checked+label:before {
+    border-right: 2px solid #3949ab;
+    border-bottom: 2px solid #3949ab
+}
+
+.switch label input[type=checkbox]:checked+.lever,
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #3949ab
+}
+
+.input-field input:not([type])+focus,
+.input-field input[type=date]:focus,
+.input-field input[type=datetime-local]:focus,
+.input-field input[type=datetime]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=number]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=search]:focus,
+.input-field input[type=tel]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=time]:focus,
+.input-field input[type=url]:focus,
+.input-field textarea.materialize-textarea:focus,
+input:not([type])+focus,
+input:not([type]):focus:not([readonly]),
+input[type=date]:focus,
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus,
+input[type=datetime-local]:focus:not([readonly]),
+input[type=datetime]:focus,
+input[type=datetime]:focus:not([readonly]),
+input[type=email]:focus,
+input[type=email]:focus:not([readonly]),
+input[type=number]:focus,
+input[type=number]:focus:not([readonly]),
+input[type=password]:focus,
+input[type=password]:focus:not([readonly]),
+input[type=search]:focus,
+input[type=search]:focus:not([readonly]),
+input[type=tel]:focus,
+input[type=tel]:focus:not([readonly]),
+input[type=text]:focus,
+input[type=text]:focus:not([readonly]),
+input[type=time]:focus,
+input[type=time]:focus:not([readonly]),
+input[type=url]:focus,
+input[type=url]:focus:not([readonly]),
+textarea.materialize-textarea:focus,
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #3949ab !important;
+    box-shadow: 0 1px 0 0 #3949ab !important
+}
+
+.clockpicker-tick.active,
+.clockpicker-tick:hover,
+.col.grid-example,
+.picker--focused .picker__day--selected,
+.picker__date-display,
+.picker__day--selected,
+.picker__day--selected:hover,
+input[type=range]+.thumb,
+input[type=range]::-webkit-slider-thumb {
+    background-color: #3949ab
+}
+
+.picker__nav--next:hover,
+.picker__nav--prev:hover,
+button.picker__clear:focus,
+button.picker__close:focus,
+button.picker__today:focus {
+    background: #85a2e6
+}
+
+.picker__day.picker__day--today,
+button.picker__close,
+button.picker__today {
+    color: #3949ab
+}
+
+.picker__nav--next,
+.picker__nav--prev {
+    top: 0
+}
+
+.clockpicker-canvas line {
+    stroke: #3949ab
+}
+
+.clockpicker-canvas-bearing,
+.clockpicker-canvas-bg {
+    fill: #3949ab
+}
+
+.sweet-alert button,
+.sweet-alert button:active,
+.sweet-alert button:hover {
+    background: #3949ab !important;
+    color: #fff !important
+}
+
+.owldiv .owl-carousel .item {
+    background: #3949ab;
+    color: #fff
+}
+
+.themediv ul li b {
+    color: #3949ab
+}
+
+footer.page-footer,
+footer.page-footer .footer-copyright {
+    background: #fff
+}
+
+footer.page-footer .footer-copyright {
+    color: #666
+}

@@ -1,0 +1,173 @@
+<!--Start HTML document-->
+<!--HTML-->
+<html lang="en">
+<!--Head-->
+<!-- Mirrored from vuelayout.com/materialcss/html/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 May 2018 09:22:49 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="../../assets/images/favicon.png" type="image/png" rel="icon">
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#5165d6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5165d6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5165d6">
+    <!--Page title-->
+    <title>Login - materialcss</title>
+    <!-- materialize stylesheet -->
+    <link href="../../assets/vendors/materialize/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!-- google material design icons -->
+    <link href="../../assets/vendors/material-icons/material-icons.css" type="text/css" rel="stylesheet" />
+    <!-- prism syntax highlighter -->
+    <link href="../../assets/vendors/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss app stylesheet -->
+    <link href="../../assets/css/app.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss theme stylesheet -->
+    <link href="../../assets/css/theme-1.css" type="text/css" rel="stylesheet" />
+    <!--Sweet Alert Css-->
+    <link href="../../assets/vendors/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css">
+    <!-- Your custom  stylesheet -->
+</head>
+<!-- End head-->
+<!--body-->
+<body>
+    <!--Page wrapper-->
+    <div class="page-wrapper">
+        <!--Control page-->
+        <div id="control-body">
+            <!--prepage loader-->
+            <div id="prepage-loader">
+                <div class="preloader-center">
+                    <div id="prepage-loader">
+                        <div class="preloader-center">
+                            <div class="col s12 m4">
+                                <div class="preloader5-cube-grid preloader-size-40">
+                                    <div class="preloader5-cube preloader5-cube1"></div>
+                                    <div class="preloader5-cube preloader5-cube2"></div>
+                                    <div class="preloader5-cube preloader5-cube3"></div>
+                                    <div class="preloader5-cube preloader5-cube4"></div>
+                                    <div class="preloader5-cube preloader5-cube5"></div>
+                                    <div class="preloader5-cube preloader5-cube6"></div>
+                                    <div class="preloader5-cube preloader5-cube7"></div>
+                                    <div class="preloader5-cube preloader5-cube8"></div>
+                                    <div class="preloader5-cube preloader5-cube9"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End prepage loader-->
+            <!--form Page Body-->
+            <main>
+                <!--start section-->
+                <section class="section">
+                    <!--start row-->
+                    <div class="row ">
+                        <!--start column-->
+                        <div class="col s12">
+                            <!--Brand logo-->
+                            <a id="form-logo-container" href="#" class="form-brand-logo">Visual Thinking</a>
+                            <!--start card-->
+                            <div Id="action-form" class="card">
+                                <!--card content-->
+                                <div class="card-content">
+                                    <!--form title-->
+                                    <h1 class="card-title form-title">Bem Vindo&#33;</h1>
+                                    <!--form-->
+                                    <form>
+                                        <div class="input-field">
+                                            <i class="material-icons prefix">mail</i>
+                                            <input id="email" type="email" class="validate" autocomplete="off" required>
+                                            <label for="email">Email</label>
+                                        </div>
+                                        <div class="input-field">
+                                            <i class="material-icons prefix">lock</i>
+                                            <input id="password" type="password" class="validate" autocomplete="off" required>
+                                            <label for="password">Password</label>
+                                        </div>
+                                        <div class="form-ref-box">
+
+                                            <div class="center">
+                                                <span class="form-ref-link">
+                                                    <a href="reset.html">Esqueceu a sua Password?</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="input-field">
+                                        <button onclick="Dologin()" class="btn btn-block waves-effect waves-light theme-bg">Entrar</button>
+                                    </div>
+                                    <!--end form-->
+                                </div>
+                                <!--end form-->
+                            </div>
+                            <!--end card content-->
+                        </div>
+                        <!--end card-->
+                        <!--form footer box-->
+                        <!--end form footer box-->
+                    </div>
+                    <!--end column-->
+        </div>
+        <!--end row-->
+        </section>
+        <!--end section-->
+        </main>
+        <!--End form page body-->
+        <!--Footer-->
+        
+        <!--End footer-->
+    </div>
+    <!--End page control-->
+    </div>
+    <!--End page wrapper-->
+    <!--  Scripts-->
+    <!-- Jquery -->
+    <script src="../../assets/vendors/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- Materialize js -->
+    <script src="../../assets/vendors/materialize/materialize.min.js" type="text/javascript"></script>
+    <!-- prism syntax highlighter -->
+    <!-- materialcss theme script -->
+    <script src="../../assets/js/app.js" type="text/javascript"></script>
+    <!--Custom Script-->
+    <script src="../../assets/js/Custom.js"></script>
+    <script src="../../assets/vendors/sweetalert2/sweetalert2.all.min.js" type="text/javascript"></script>
+
+    <script>
+        loginCheck()
+
+        function Dologin() {
+            Login(document.getElementById('email').value, document.getElementById('password').value);
+        }
+        var submit_email = document.getElementById("email");
+        var submit_pass = document.getElementById("password");
+        submit_email.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) { //checks whether the pressed key is "Enter"
+                Dologin();
+            } else {
+                console.log(e.keyCode);
+            }
+        });
+
+        submit_pass.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) { //checks whether the pressed key is "Enter"
+                Dologin();
+            } else {
+                console.log(e.keyCode);
+            }
+        });
+    </script>
+    <!--End scripts-->
+</body>
+<!--End body-->
+
+</html>
+<!--End HTML-->

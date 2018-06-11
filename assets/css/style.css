@@ -1,0 +1,46 @@
+/* ////////////////////////////////   custom CSS /////////////////////////////////////////// */
+
+.greyer {
+    background-color: #d2d2d2;
+}
+
+.greyerer {
+    background-color: #b6b6b6;
+}
+
+.pad20 {
+    padding-left: 20px;
+}
+
+.pad35 {
+    padding-left: 30px;
+}
+
+.truetype3-font {
+    font-family: Truetype-3;
+}
+
+.modal-snug {
+    padding-top: 25px;
+    margin-bottom: 0px;
+}
+
+.buttonconc:before {
+    content: 'Concluir';
+}
+
+@media screen and (max-width: 400px) {
+    .buttonconc:before {
+        content: '->';
+    }
+}
+.buttoncanc:before {
+    content: 'Cancelar';
+}
+
+@media screen and (max-width: 400px) {
+    .buttoncanc:before {
+        content: "X";
+    }
+}
+/* write your css from here */

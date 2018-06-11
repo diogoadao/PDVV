@@ -1,7 +1,7 @@
 
     <div class="material-table z-depth-3">
         <div class="table-header">
-            <span class="table-title">Utilizadores</span>
+            
             <div class="actions">
                 <a href="Javascript:void(0)" class="export-in-csv waves-effect tooltipped   btn-flat" data-position="bottom" data-delay="50"
                     data-tooltip="Export in CSV">

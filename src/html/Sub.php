@@ -54,7 +54,7 @@
                                                 <div class="card">
                                                     <!-- custom filter length Table -->
                                                     <?php
-                                                        require_once 'template/Admin/UserTable.php';
+                                                        require_once 'template/Admin/Sub_enterprise-User-Table.php';
                                                     ?>
                                                     <!-- End custom filter length Table -->
                                                 </div>
@@ -68,7 +68,7 @@
                                                 <div class="card">
                                                     <!-- custom filter length Table -->
                                                     <?php
-                                                        require_once 'template/Admin/ClientTable.php';
+                                                        require_once 'template/Admin/Sub_enterprise-worker-Table.php';
                                                     ?>
                                                     <!-- End custom filter length Table -->
                                                 </div>
@@ -90,8 +90,8 @@
             <?php 
                     require_once 'template/Footer.html';
                     require_once 'template/Scripts.html';
-                    require_once 'template/Admin/UserTable-scripts.html';
-                    require_once 'template/Admin/ClientTable-scripts.html';
+                    require_once 'template/Admin/Sub_enterprise-User-Table-scripts.html';
+                    require_once 'template/Admin/Sub_enterprise-worker-Table-scripts.html';
                 ?>
         </div>
         <!--End page control-->

@@ -15,17 +15,18 @@
         <table id="custom-filter-length-datatable" class="bordered highlight">
         <thead>
                 <tr>
-                  <th>User ID</th>
+                  <th>ID Utilizador</th>
                   <th>Full Name</th>
                   <th>Email</th>
                   <th>UUID</th>
                   <th>Estado</th>
+                  <th>Empresa</th>
                   <th>User Page</th>
                 </tr>
             </thead>
             <tbody>
                     <?php
-                        $results = mysqli_query($connection, "SELECT tt_state_text as state, tt_id as id ,tt_first_name as fname , tt_last_name as lname ,tt_email as email , tt_uuid as uuid FROM tt_user, tt_state where tt_client ='0' and  tt_state_id=tt_fk_status  ORDER BY tt_id ");
+                        $results = mysqli_query($connection, "SELECT tt_state_text as state, tt_enterprise_name as enterprise, tt_id as id ,tt_first_name as fname , tt_last_name as lname ,tt_email as email , tt_uuid as uuid FROM tt_user, tt_state , tt_enterprise where (tt_worker ='0' and  tt_state_id=tt_fk_status) AND (tt_fk_Enterprise = tt_enterprise_id) AND (".$_SESSION['enterprise']." = tt_enterprise_id)  ORDER BY tt_id ");
                         $items = array();
                         $count = mysqli_num_rows($results);
                         
@@ -36,6 +37,7 @@
                         echo '<td>'.$row['email'].'</td>';
                         echo '<td>'.$row['uuid'].'</td>';
                         echo '<td>'.$row['state'].'</td>';
+                        echo '<td>'.$row['enterprise'].'</td>';
                         echo '<td><button data-target="modal" class="btn modal-trigger indigo darken-2" value='.$row['id'].' onclick="localtemp(this);"><i class="far fa-edit fa-2x"></i></button></td>';
                         echo("</tr>");
                        }
@@ -43,11 +45,12 @@
             </tbody>
             <tfoot>
                 <tr>
-                  <th>User ID</th>
+                  <th>ID Utilizador</th>
                   <th>Full Name</th>
                   <th>Email</th>
                   <th>UUID</th>
                   <th>Estado</th>
+                  <th>Empresa</th>
                   <th>User Page</th>
                 </tr>
             </tfoot>

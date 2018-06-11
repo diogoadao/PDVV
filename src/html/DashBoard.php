@@ -3,6 +3,7 @@
 <html lang="en">
 <!--Head-->
 <?php 
+    
     require_once 'template/Head.html';
 ?>
 
@@ -18,10 +19,28 @@
         <div id="control-body" class="fixed-sidebar medium-sidebar fixed-nav collapsed-sidebar">
             <?php 
                 require_once 'template/Preloader.html';
-                require_once 'template/Nav-A.html';
+                require_once 'template/Nav.html';
             ?>
             <!--Page Body-->
-            <main id="page-body" class="page-body">
+            <main class="page-body">
+                <section class="section">
+                    <!--start row-->
+                    <div class="row">
+                        <!--start column-->
+                        <div class="col s12">
+                            
+                            <div class="card z-depth-3">
+
+                                <div class="card-content z-depth-3">
+                                    <?php 
+                                        require_once 'template/Admin/Metabase/Metabase.php';
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </main>
             <!--End page body-->
             <?php 

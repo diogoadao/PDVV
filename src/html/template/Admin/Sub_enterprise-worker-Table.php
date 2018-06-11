@@ -26,19 +26,18 @@
             </thead>
             <tbody>
                     <?php
-                        $results = mysqli_query($connection, "SELECT tt_state_text as state, tt_enterprise_name as enterprise, tt_id as id ,tt_first_name as fname , tt_last_name as lname ,tt_email as email , tt_uuid as uuid FROM tt_user, tt_state , tt_enterprise where (tt_worker ='1' and  tt_state_id=tt_fk_status) AND (tt_fk_Enterprise = tt_enterprise_id) AND (tt_enterprise_id = '$_SESSION[enterprise]')  ORDER BY tt_id ");
-                        $items = array();
-                        $count = mysqli_num_rows($results);
-                        
+                        $results = mysqli_query($connection, "SELECT tt_enterprise_name as enterprise, tt_enterprise_id as contracor_id ,tt_subcontrator_id  as sub_id from tt_enterprise , tt_sub_enterprise  where tt_contractor_id = tt_enterprise_id AND tt_enterprise_id = '$_SESSION[enterprise]'");
                         while ($row = mysqli_fetch_array($results)) {
+                            $results = mysqli_query($connection, "SELECT tt_state_text as state, tt_enterprise_name as enterprise, tt_id as id ,tt_first_name as fname , tt_last_name as lname ,tt_email as email , tt_uuid as uuid FROM tt_user, tt_state , tt_enterprise where (tt_worker ='1' and  tt_state_id=tt_fk_status) AND (tt_fk_Enterprise = tt_enterprise_id) AND (tt_enterprise_id = '$row[sub_id]')  ORDER BY tt_id ");
+                            $row2 = mysqli_fetch_array($results);
                         echo("<tr>");
-                        echo '<td>'.$row['id'].'</td>';
-                        echo '<td>'.$row['fname'].' '.$row['lname'].'</td>';
-                        echo '<td>'.$row['email'].'</td>';
-                        echo '<td>'.$row['uuid'].'</td>';
-                        echo '<td>'.$row['state'].'</td>';
-                        echo '<td>'.$row['enterprise'].'</td>';
-                        echo '<td><button data-target="modal" class="btn modal-trigger indigo darken-2" value='.$row['id'].' onclick="localtemp(this);"><i class="far fa-edit fa-2x"></i></button></td>';
+                        echo '<td>'.$row2['id'].'</td>';
+                        echo '<td>'.$row2['fname'].' '.$row2['lname'].'</td>';
+                        echo '<td>'.$row2['email'].'</td>';
+                        echo '<td>'.$row2['uuid'].'</td>';
+                        echo '<td>'.$row2['state'].'</td>';
+                        echo '<td>'.$row2['enterprise'].'</td>';
+                        echo '<td><button data-target="modal" class="btn modal-trigger indigo darken-2" value='.$row2['id'].' onclick="localtemp(this);"><i class="far fa-edit fa-2x"></i></button></td>';
                         echo("</tr>");
                        }
                     ?>   

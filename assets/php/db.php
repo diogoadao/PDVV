@@ -31,7 +31,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $hostname = "192.168.2.252";
 $username = "Time";
 $password = "Time?";
-$database = "TimeTracker";
+$database = "PDVV";
 $connection = mysqli_connect($hostname, $username, $password, $database);
 mysqli_set_charset($connection, "utf8");
 if (mysqli_connect_errno()) {
